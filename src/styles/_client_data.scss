@@ -1,0 +1,96 @@
+.client-content {
+  box-sizing: border-box;
+  padding: 3rem 4rem;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .cols {
+    &::after {
+      display: block;
+      clear: both;
+    }
+  }
+
+  .col {
+    width: 50%;
+    float: left;
+    display: inline-block;
+  }
+
+  .desc {
+    color: $light-text-color;
+  }
+
+  .desc-value {
+    color: $text-color;
+  }
+
+  .general-info {
+    margin-bottom: .5rem;
+    position: relative;
+    height: 128px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .avatar {
+    float: left;
+    position: relative;
+    display: inline-block;
+    }
+
+   .client-name {
+      color: $text-color;
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    }
+
+
+    .company-info {
+    
+      bottom: 0;
+
+      .company {
+        margin: 0;
+      }
+    }
+  }
+
+  .contacts {
+    margin-top: 1rem;
+  }
+
+  .client-location-map {
+    width: 100%;
+    transition: .2s;
+  }
+
+  .no-map {
+    height: 200px;
+    width: 100%;
+    line-height: 200px;
+  }
+
+  .map-error {
+    filter: blur(12px);
+  }
+
+  .hint {
+    margin-top: 41%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $light-text-color;
+  }
+}
